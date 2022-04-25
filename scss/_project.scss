@@ -1,0 +1,15 @@
+.project{
+
+    &-container{
+        background-color: $primary-color;
+        border-radius: 5px;
+        height: 100%;
+        min-height: 40vh;
+        margin: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem 2rem;
+    }
+}

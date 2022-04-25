@@ -1,0 +1,214 @@
+main {
+    width: 100%;
+    height: 100%;
+    min-height: fit-content;
+}
+
+.overlay {
+    background-color: $primary-color;
+    opacity: 0.9;
+    z-index: 2;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/dist/images/hero-img.jpg');
+    opacity: 1;
+    background-size: cover;
+
+    &-text {
+        width: 40%;
+        height: fit-content;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.container {
+    height: fit-content;
+    width: 100%;
+    background-color: $white-color;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: $primary-color;
+    border-radius: 5px;
+    padding: 3rem 4rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &-img {
+        width: 20%;
+
+    }
+
+    &-textarea {
+        width: 50%;
+    }
+}
+
+
+.work {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: fit-content;
+    position: relative;
+    overflow: hidden;
+
+    &-heading {
+        color: $secondary-color;
+        text-align: start;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    &-carousel {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+
+        &-items {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        &-button-prev {
+            color: $secondary-color;
+            position: absolute;
+            z-index: 98;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 1rem;
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 1rem;
+            background-color: transparent;
+            border: none;
+
+        }
+
+        &-button-next {
+            color: $secondary-color;
+            position: absolute;
+            z-index: 98;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 1rem;
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 1rem;
+            background-color: transparent;
+            border: none;
+        }
+
+
+        &-item {
+            padding: 150px;
+            margin: 0 50px;
+            min-height: fit-content;
+            max-height: 200px;
+            min-width: fit-content;
+            background-image: url('/dist/images/site.png');
+            background-color: $primary-color;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: ease-in-out 0.5s all;
+
+            &:hover {
+                padding: 200px;
+                transition: ease-in-out 0.5s all;
+            }
+        }
+    }
+
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+
+
+    .heading {
+        color: $secondary-color;
+        width: 100%;
+        height: fit-content;
+        text-align: start;
+    }
+
+    .testimonial-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $primary-color;
+        width: 100%;
+        height: fit-content;
+        min-height: 30vh;
+        padding: 2rem 4rem;
+
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .testimonial-logo {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 60%;
+        }
+    }
+
+    .testimonial-text {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: $primary-color;
+    bottom: 0;
+}
