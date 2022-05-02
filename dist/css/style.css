@@ -3,7 +3,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  color: #effafc;
 }
 
 .btn {
@@ -86,6 +85,7 @@
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+  color: #effafc;
 }
 
 @-webkit-keyframes typing {
@@ -252,6 +252,7 @@ main {
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
+  background-color: #effafc;
 }
 
 .overlay {
@@ -348,6 +349,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #effafc;
 }
 
 .about-img {
@@ -356,6 +358,7 @@ main {
 
 .about-textarea {
   width: 50%;
+  color: #182734;
 }
 
 .work {
@@ -383,31 +386,32 @@ main {
   min-height: 100%;
 }
 
-.work-carousel {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0px;
-}
-
-.work-carousel-items {
-  height: 100%;
+.work .work-carousel-wrapper {
+  overflow: hidden;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.work-carousel {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0 40px;
 }
 
 .work-carousel-button-prev {
@@ -423,6 +427,7 @@ main {
   padding: 1rem;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .work-carousel-button-next {
@@ -438,30 +443,26 @@ main {
   padding: 1rem;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .work-carousel-item {
-  padding: 150px;
-  margin: 0 50px;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-  max-height: 200px;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  background-image: url("/dist/images/site.png");
-  background-color: #182734;
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transition: ease-in-out 0.5s all;
-  transition: ease-in-out 0.5s all;
+  width: 30%;
+  height: 200px;
+  background-color: blue;
+  padding: 1rem 4rem;
+  margin: 1rem;
+  -webkit-transition: opacity .5s, z-index .5s, -webkit-transform .5s;
+  transition: opacity .5s, z-index .5s, -webkit-transform .5s;
+  transition: transform .5s, opacity .5s, z-index .5s;
+  transition: transform .5s, opacity .5s, z-index .5s, -webkit-transform .5s;
+  opacity: 0.2;
 }
 
-.work-carousel-item:hover {
-  padding: 200px;
-  -webkit-transition: ease-in-out 0.5s all;
-  transition: ease-in-out 0.5s all;
+.work-carousel-item .initial,
+.work-carousel-item .active {
+  opacity: 1;
+  position: relative;
 }
 
 .testimonials {
@@ -476,6 +477,7 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  background-color: #effafc;
 }
 
 .testimonials .heading {
@@ -505,6 +507,7 @@ main {
   height: fit-content;
   min-height: 30vh;
   padding: 2rem 4rem;
+  color: #effafc;
 }
 
 .testimonials .testimonial-container:nth-child(odd) {
@@ -636,3 +639,4 @@ footer {
     margin: 2rem;
   }
 }
+/*# sourceMappingURL=style.css.map */

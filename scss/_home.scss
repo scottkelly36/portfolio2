@@ -2,6 +2,7 @@ main {
     width: 100%;
     height: 100%;
     min-height: fit-content;
+    background-color: $white-color;
 }
 
 .overlay {
@@ -59,6 +60,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    background-color: $white-color;
+
 
     &-img {
         width: 20%;
@@ -67,6 +70,7 @@ main {
 
     &-textarea {
         width: 50%;
+        color: $primary-color;
     }
 }
 
@@ -88,19 +92,23 @@ main {
         min-height: 100%;
     }
 
-    &-carousel {
-        width: fit-content;
-        height: fit-content;
-        display: flex;
-        align-items: center;
-        margin: 0px;
 
-        &-items {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
+    .work-carousel-wrapper {
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+    }
+
+    &-carousel {
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 40px;
+
+
 
 
         &-button-prev {
@@ -115,6 +123,7 @@ main {
             padding: 1rem;
             background-color: transparent;
             border: none;
+            cursor: pointer;
 
         }
 
@@ -130,24 +139,23 @@ main {
             padding: 1rem;
             background-color: transparent;
             border: none;
+            cursor: pointer;
         }
 
 
         &-item {
-            padding: 150px;
-            margin: 0 50px;
-            min-height: fit-content;
-            max-height: 200px;
-            min-width: fit-content;
-            background-image: url('/dist/images/site.png');
-            background-color: $primary-color;
-            background-repeat: no-repeat;
-            background-size: contain;
-            transition: ease-in-out 0.5s all;
+            width: 30%;
+            height: 200px;
+            background-color: blue;
+            padding: 1rem 4rem;
+            margin: 1rem;
+            transition: transform .5s, opacity .5s, z-index .5s;
+            opacity: 0.2;
 
-            &:hover {
-                padding: 200px;
-                transition: ease-in-out 0.5s all;
+            .initial,
+            .active {
+                opacity: 1;
+                position: relative;
             }
         }
     }
@@ -159,7 +167,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-
+    background-color: $white-color;
 
 
     .heading {
@@ -178,6 +186,7 @@ main {
         height: fit-content;
         min-height: 30vh;
         padding: 2rem 4rem;
+        color: $white-color;
 
         &:nth-child(odd) {
             flex-direction: row-reverse;
