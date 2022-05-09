@@ -1,28 +1,31 @@
-$primary-color: rgba(24,39,52, 1);
-$secondary-color: rgba(0,124,200, 1);
-$feature-color: rgba(78,169,218, 1);
-$white-color: rgba(239,250,252, 1);
+$primary-color: rgba(24, 39, 52, 1);
+$secondary-color: rgba(0, 124, 200, 1);
+$feature-color: rgba(78, 169, 218, 1);
+$white-color: rgba(239, 250, 252, 1);
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
 
+
+
 @mixin btn-bg($bg) {
     background: $bg;
 
-    &:hover{
+    &:hover {
         background: darken($bg, 8%);
         transition: all 0.3s ease;
     }
 
-    &:active{
+    &:active {
         background: darken($bg, 25%);
         transition: all 0.3s ease;
     }
 }
-.btn{
+
+.btn {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
@@ -36,7 +39,7 @@ $white-color: rgba(239,250,252, 1);
     transition: all 0.3s ease;
 
     &-feature {
-    @include btn-bg($feature-color);
+        @include btn-bg($feature-color);
     }
 
     &-primary {
@@ -44,11 +47,11 @@ $white-color: rgba(239,250,252, 1);
     }
 
 
-    &-secondary{
+    &-secondary {
         @include btn-bg($secondary-color);
     }
 }
 
 .drop-shadow {
     filter: drop-shadow(2px 4px 8px #3723a1);
-  }
+}

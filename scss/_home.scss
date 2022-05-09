@@ -62,14 +62,24 @@ main {
     align-items: center;
     background-color: $white-color;
 
+    &-heading {
+        color: $feature-color;
+    }
+
+    &-img-container {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     &-img {
-        width: 20%;
+        width: 80%;
 
     }
 
     &-textarea {
-        width: 50%;
+        width: 40%;
         color: $primary-color;
     }
 }
@@ -90,6 +100,7 @@ main {
         text-align: start;
         width: 100%;
         min-height: 100%;
+        padding-left: 8%;
     }
 
 
@@ -124,6 +135,13 @@ main {
             background-color: transparent;
             border: none;
             cursor: pointer;
+            transition: all ease-in-out 0.3s;
+
+            &:hover {
+                font-size: 4rem;
+                color: $feature-color;
+                transition: all ease-in-out 0.3s;
+            }
 
         }
 
@@ -140,23 +158,60 @@ main {
             background-color: transparent;
             border: none;
             cursor: pointer;
+            transition: all ease-in-out 0.3s;
+
+            &:hover {
+                font-size: 4rem;
+                color: $feature-color;
+                transition: all ease-in-out 0.3s;
+            }
         }
 
 
         &-item {
             width: 30%;
-            height: 200px;
-            background-color: blue;
-            padding: 1rem 4rem;
+            height: 300px;
+            background-image: url(/dist/images/bluebell.png);
+            background-position: top;
+            background-size: cover;
             margin: 1rem;
             transition: transform .5s, opacity .5s, z-index .5s;
-            opacity: 0.2;
+            opacity: 0;
+            display: none;
 
-            .initial,
-            .active {
-                opacity: 1;
-                position: relative;
+            .item-overlay {
+                height: 100%;
+                width: 100%;
+                background-color: $primary-color;
+                opacity: 0;
+                transition: all ease-in-out 0.3s;
+                z-index: 200;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                &:hover {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0.6;
+                    transition: all ease-in-out 0.3s;
+                }
+
+                .item-link {
+                    opacity: 1;
+                }
             }
+        }
+
+        .initial,
+        .active {
+            opacity: 1;
+            position: relative;
+            display: block;
         }
     }
 
@@ -175,18 +230,19 @@ main {
         width: 100%;
         height: fit-content;
         text-align: start;
+        padding-left: 8%;
     }
 
     .testimonial-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        background-color: $primary-color;
+
+        align-items: center;
         width: 100%;
         height: fit-content;
         min-height: 30vh;
         padding: 2rem 4rem;
-        color: $white-color;
+        color: $primary-color;
 
         &:nth-child(odd) {
             flex-direction: row-reverse;
@@ -208,8 +264,10 @@ main {
     .testimonial-text {
         width: 60%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
 }
 
@@ -217,7 +275,7 @@ main {
 
 footer {
     width: 100%;
-    height: 30vh;
+    height: 10vh;
     background-color: $primary-color;
     bottom: 0;
 }

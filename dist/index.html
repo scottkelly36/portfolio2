@@ -22,23 +22,24 @@
   <body>
     <nav class="nav">
       <div class="left-logo">
-        <p>Metaa</p>
+        <img src="/dist/images/default.png" alt=""/>
       </div>
 
       <ul class="nav-links">
         <li>
-          <a href="#" class="nav-link"> Home </a>
+          <a href="index.html" class="nav-link"> Home </a>
         </li>
 
         <li>
-          <a href="#" class="nav-link"> Work </a>
+          <a href="index.html#about" class="nav-link"> About </a>
         </li>
+        
         <li>
-          <a href="#" class="nav-link"> About </a>
+          <a href="index.html#work" class="nav-link"> Work </a>
         </li>
-
+        
         <li>
-          <a href="#" class="nav-link"> Contact </a>
+          <a href="contact.html" class="nav-link"> Contact </a>
         </li>
 
         <li>
@@ -68,14 +69,14 @@
           <h1 class="main-heading my-2 typing-effect">
             Hi I'm Scott, Freelance Web Developer.
           </h1>
-          <a href="#" class="btn btn-feature my-3">View My Work</a>
+          <a href="index.html#work" class="btn btn-feature my-3">View My Work</a>
         </div>
       </div>
 
       <div class="container">
-        <div class="about box">
-          <div class="about-img">
-            <img src="" alt="" />
+        <div id="about" class="about box">
+          <div class="about-img-container">
+            <img  class="about-img" src="/dist/images/about.jpg" alt="" />
           </div>
           <div class="about-textarea">
             <h2 class="about-heading">About Me</h2>
@@ -83,30 +84,36 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
               maiores iste doloremque magni, vitae quae officiis corrupti eius
               saepe, ipsam dolore minus aspernatur obcaecati? Illum illo iste
-              dolorem dignissimos recusandae, fuga expedita ducimus magnam nobis
+              dolorem dignissimos recusandae.<br><br>
+              
+              fuga expedita ducimus magnam nobis
               sequi unde corporis harum temporibus et, itaque quasi nemo commodi
               quidem labore cum quod voluptatum, eveniet iusto cupiditate?
               Similique tempora quis repellendus fugiat ex porro animi iusto
               culpa. Eaque deserunt porro dolores odit commodi voluptas
-              perferendis iste, quasi blanditiis facere, a recusandae numquam,
+              perferendis iste, quasi blanditiis facere.<br><br> 
+              
+              a recusandae numquam,
               ipsum laborum. Dicta, veniam amet laborum numquam ipsum
               consequatur dolorum praesentium id odit similique vel molestiae
               delectus saepe? Quos ullam et, sint distinctio porro quis ab
               dolorum reiciendis dicta eligendi obcaecati iste officia dolore.
               Necessitatibus perferendis nihil sapiente eaque quod quisquam,
               quis dolores aperiam aspernatur earum, enim tenetur repellat
-              explicabo numquam. Iure asperiores, maxime eos ex dolorum magnam
+              explicabo numquam. Iure asperiores.<br><br>
+              
+              maxime eos ex dolorum magnam
               culpa labore corporis similique, numquam excepturi perferendis
               expedita animi obcaecati porro iste voluptatibus architecto?
             </p>
-            <a href="#" class="btn btn-feature">Get In Touch</a>
+            <a href="#" class="btn btn-feature my-2">Get In Touch</a>
           </div>
         </div>
 
-        <div class="work my-2">
+        <div id="work" class="work my-2">
           <h2 class="work-heading my-1">My Work</h2>
           
-            <div class="work-carousel-wrapper">
+            <div class="work-carousel-wrapper my-3">
               <div class="work-carousel">
                 <button
                 id="workPrevBtn"
@@ -115,21 +122,21 @@
                   &#8249;
                 </button>
 
-                  <div class="work-carousel-item initial" background-img="src(/images/bluebell.png)">
+                  <div class="work-carousel-item initial active" background-img="src(/images/bluebell.png)">
                     <div class="item-overlay">
-                      <a href="#" class="item-link"></a>
-                    </div>
-                  </div>
-
-                  <div class="work-carousel-item">
-                    <div class="item-overlay">
-                      <a href="#" class="item-link"></a>
+                      <a href="single.html" class="btn btn-feature item-link">View more</a>
                     </div>
                   </div>
 
                   <div class="work-carousel-item active">
                     <div class="item-overlay">
-                      <a href="#" class="item-link"></a>
+                      <a href="single.html" class="btn btn-feature item-link">View more</a>
+                    </div>
+                  </div>
+
+                  <div class="work-carousel-item active">
+                    <div class="item-overlay">
+                      <a href="single.html" class="btn btn-feature item-link">View more</a>
                     </div>
                   </div>
 
@@ -174,17 +181,16 @@
         
 
         <div class="testimonials my-2">
-          <h2 class="heading">Testimonials</h2>
+          <h2 class="heading my-3">Testimonials</h2>
           <div class="testimonial-container my-2">
             <div class="testimonial-logo">
               <img
-                class="drop-shadow"
                 src="/dist/images/WEM_Logo_reverse_colour.png"
                 alt=""
               />
             </div>
 
-            <div class="testimonial-text">
+            <div class="testimonial-text p-2">
               <q>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Laboriosam aliquam doloremque ullam assumenda. Deserunt totam
@@ -196,7 +202,7 @@
               perferendis, ducimus adipisci consequatur culpa voluptates ea
               assumenda. E#8249x earum evniet, sint rem quos vel!
             </q>
-            <p class="testimonial-author">David Ford, WEM Marine</p>
+            <p class="testimonial-author my-1">David Ford, WEM Marine</p>
             </div>
             
           </div>
@@ -204,13 +210,12 @@
           <div class="testimonial-container my-2">
             <div class="testimonial-logo">
               <img
-                class="drop-shadow"
                 src="/dist/images/WEM_Logo_reverse_colour.png"
                 alt=""
               />
             </div>
 
-            <div class="testimonial-text">
+            <div class="testimonial-text p-2">
               <q>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Laboriosam aliquam doloremque ullam assumenda. Deserunt totam
@@ -222,19 +227,20 @@
               perferendis, ducimus adipisci consequatur culpa voluptates ea
               assumenda. Ex earum eveniet, sint rem quos vel!
             </q>
+            <p class="testimonial-author my-1">David Ford, WEM Marine</p>
+
             </div>
           </div>
 
           <div class="testimonial-container my-2">
             <div class="testimonial-logo">
               <img
-                class="drop-shadow"
                 src="/dist/images/WEM_Logo_reverse_colour.png"
                 alt=""
               />
             </div>
 
-            <div class="testimonial-text">
+            <div class="testimonial-text p-2">
               <q>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Laboriosam aliquam doloremque ullam assumenda. Deserunt totam
@@ -246,6 +252,7 @@
               perferendis, ducimus adipisci consequatur culpa voluptates ea
               assumenda. Ex earum eveniet, sint rem quos vel!
             </q>
+            <p class="testimonial-author my-1">David Ford, WEM Marine</p>
             </div>
           </div>
         </div>

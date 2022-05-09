@@ -1,15 +1,41 @@
-.project{
+.project {
 
-    &-container{
-        background-color: $primary-color;
+    &-container {
+
+        color: $primary-color;
         border-radius: 5px;
         height: 100%;
-        min-height: 40vh;
-        margin: 4rem;
+        min-height: 100vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
         padding: 3rem 2rem;
     }
+
+    &-img {
+        width: 70%;
+    }
+
+    &-text {
+        width: 60%;
+    }
+
+    &-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .link-holder {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
 }

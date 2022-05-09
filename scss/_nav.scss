@@ -1,4 +1,4 @@
-.nav{
+.nav {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -9,10 +9,18 @@
     background-color: $primary-color;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
-    .left-logo{
+    .left-logo {
         width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 30px;
+        }
     }
-    &-links{
+
+    &-links {
         display: flex;
         width: 40%;
         justify-content: space-between;
@@ -20,13 +28,13 @@
         text-align: center;
     }
 
-    &-link{
+    &-link {
         text-decoration: none;
         color: $white-color;
         font-weight: 600;
         transition: all ease-in-out 0.5s;
 
-        &:hover{
+        &:hover {
             color: $secondary-color;
             transition: all ease-in-out 0.5s;
         }

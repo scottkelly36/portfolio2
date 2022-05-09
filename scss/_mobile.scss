@@ -3,70 +3,91 @@ $l : 992px;
 $m : 768px;
 $s : 576px;
 
-@media(min-width: $m){
-    .nav{
-        &-mobile{
+@media(max-width: $xl) {
+    .contact-socials {
+        width: 40%;
+    }
+}
+
+@media(min-width: $m) {
+    .nav {
+        &-mobile {
             display: none
         }
     }
 }
 
-@media(max-width: $m){
+@media(max-width: $m) {
+    .contact {
+        .container {
+            flex-direction: column;
 
-    .container{
+            .contact-left {
+                width: 70%;
+                margin-bottom: 3rem;
+            }
+
+            .contact-right {
+                width: 70%;
+            }
+        }
+    }
+
+    .container {
         padding: 2rem 1.5rem;
     }
-    .nav{
+
+    .nav {
         position: fixed;
         z-index: 100;
-        
-        &-link{
+
+        &-link {
             display: none;
         }
-       
+
     }
 
-    .typing-effect{
+    .typing-effect {
         font-size: 1.2rem;
     }
 
-    .about{
+    .about {
         flex-direction: column;
 
-        &-textarea{
+        &-textarea {
             width: 90%;
         }
     }
 
-    .testimonials{
-        .testimonial-container{
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 30vh;
-        padding: 1rem;
-
-        &:nth-child(odd){
+    .testimonials {
+        .testimonial-container {
             flex-direction: column;
-        }
+            justify-content: space-between;
+            align-items: center;
+            min-height: 30vh;
+            padding: 1rem;
+
+            &:nth-child(odd) {
+                flex-direction: column;
+            }
         }
 
-        .testimonial-logo{
+        .testimonial-logo {
             width: 90%;
             height: 100%;
             margin: 2rem;
-            
-    
-           img{
-               width: 70%;
-           }
+
+
+            img {
+                width: 70%;
+            }
         }
-    
-        .testimonial-text{
+
+        .testimonial-text {
             width: 95%;
             margin: 2rem;
         }
     }
 
-    
+
 }
