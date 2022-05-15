@@ -197,6 +197,8 @@
   right: 0;
   list-style: none;
   z-index: 100;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-mobile-dropdown li {
@@ -210,10 +212,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-mobile-dropdown li:hover {
   background-color: #007cc8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-mobile-link {
@@ -225,6 +231,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .m-1 {
