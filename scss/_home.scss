@@ -92,8 +92,6 @@ main {
     width: 100%;
     height: 100%;
     min-height: fit-content;
-    position: relative;
-    overflow: hidden;
 
     &-heading {
         color: $secondary-color;
@@ -103,119 +101,35 @@ main {
         padding-left: 8%;
     }
 
+    &-wrapper {
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100%;
+    }
 
-    .work-carousel-wrapper {
+
+
+    &-item {
+
+        height: 200px;
+        width: fit-content;
         overflow: hidden;
-        width: 100%;
-        display: flex;
-    }
 
-    &-carousel {
-        transform-style: preserve-3d;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 0 40px;
-
-
-
-
-        &-button-prev {
-            color: $secondary-color;
-            position: absolute;
-            z-index: 98;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 1rem;
-            font-size: 3rem;
-            font-weight: bold;
-            padding: 1rem;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            transition: all ease-in-out 0.3s;
-
-            &:hover {
-                font-size: 4rem;
-                color: $feature-color;
-                transition: all ease-in-out 0.3s;
-            }
-
-        }
-
-        &-button-next {
-            color: $secondary-color;
-            position: absolute;
-            z-index: 98;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 1rem;
-            font-size: 3rem;
-            font-weight: bold;
-            padding: 1rem;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            transition: all ease-in-out 0.3s;
-
-            &:hover {
-                font-size: 4rem;
-                color: $feature-color;
-                transition: all ease-in-out 0.3s;
-            }
-        }
-
-
-        &-item {
-            width: 30%;
-            height: 300px;
-            background-image: url(/dist/images/bluebell.png);
-            background-position: top;
-            background-size: cover;
-            margin: 1rem;
-            transition: transform .5s, opacity .5s, z-index .5s;
-            opacity: 0;
-            display: none;
-
-            .item-overlay {
-                height: 100%;
-                width: 100%;
-                background-color: $primary-color;
-                opacity: 0;
-                transition: all ease-in-out 0.3s;
-                z-index: 200;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-
-                &:hover {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    opacity: 0.6;
-                    transition: all ease-in-out 0.3s;
-                }
-
-                .item-link {
-                    opacity: 1;
-                }
-            }
-        }
-
-        .initial,
-        .active {
-            opacity: 1;
-            position: relative;
-            display: block;
+        &:hover {
+            grid-row: span 2;
+            overflow: visible;
         }
     }
 
+
+
+    img {
+        height: auto;
+        width: 100%;
+    }
 }
+
 
 .testimonials {
     display: flex;

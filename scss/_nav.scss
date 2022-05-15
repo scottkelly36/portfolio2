@@ -40,3 +40,40 @@
         }
     }
 }
+
+.mobile-nav {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-mobile-dropdown {
+    background: $primary-color;
+    padding: 0;
+    margin-top: 85px;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    list-style: none;
+    z-index: 100;
+
+    li {
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: $secondary-color;
+        }
+    }
+}
+
+.nav-mobile-link {
+    color: $white-color;
+    text-decoration: none;
+}
+
+.visible {
+    display: flex;
+}
