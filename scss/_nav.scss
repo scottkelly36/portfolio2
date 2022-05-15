@@ -56,15 +56,18 @@
     right: 0;
     list-style: none;
     z-index: 100;
+    transition: all 0.5s ease-in-out;
 
     li {
         padding: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.3s ease;
 
         &:hover {
             background-color: $secondary-color;
+            transition: all 0.3s ease;
         }
     }
 }
@@ -72,8 +75,10 @@
 .nav-mobile-link {
     color: $white-color;
     text-decoration: none;
+
 }
 
 .visible {
     display: flex;
+    transition: all 0.5s ease-in-out;
 }

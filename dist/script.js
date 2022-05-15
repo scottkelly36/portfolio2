@@ -1,6 +1,6 @@
-document.getElementById("mobNav").addEventListener("click", toggleNav);
+const hamburger = document.querySelector("#mobNav");
+const menu = document.querySelector("#dropdown");
 
-function toggleNav(){
-    let nav = document.querySelector('#dropdown')
-    nav.classList.toggle('visible')
-  }
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("visible")
+})
