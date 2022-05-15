@@ -1,0 +1,22 @@
+
+  .typing-effect {
+    width: 37ch;
+    animation: typing 2s steps(37), effect .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    color: $white-color;
+  }
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes effect {
+    50% {
+      border-color: transparent
+    }
+  }

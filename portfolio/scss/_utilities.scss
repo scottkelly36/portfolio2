@@ -1,0 +1,57 @@
+$primary-color: rgba(24, 39, 52, 1);
+$secondary-color: rgba(0, 124, 200, 1);
+$feature-color: rgba(78, 169, 218, 1);
+$white-color: rgba(239, 250, 252, 1);
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+@mixin btn-bg($bg) {
+    background: $bg;
+
+    &:hover {
+        background: darken($bg, 8%);
+        transition: all 0.3s ease;
+    }
+
+    &:active {
+        background: darken($bg, 25%);
+        transition: all 0.3s ease;
+    }
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    background: white;
+    width: fit-content;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    transition: all 0.3s ease;
+
+    &-feature {
+        @include btn-bg($feature-color);
+    }
+
+    &-primary {
+        @include btn-bg($primary-color);
+    }
+
+
+    &-secondary {
+        @include btn-bg($secondary-color);
+    }
+}
+
+.drop-shadow {
+    filter: drop-shadow(2px 4px 8px #3723a1);
+}
