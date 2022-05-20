@@ -11,7 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="/dist/images/favicon-32x32.png" />
+    <title>Scott's portfolio</title>
   </head>
   <body>
     <nav class="nav">
@@ -54,28 +55,34 @@
         </li>
       </ul>
     </nav>
-    <ul class="nav-mobile-dropdown" id="dropdown">
-      <li>
-        <a href="index.html" class="nav-mobile-link"> Home </a>
-      </li>
+    <nav>
+      <ul class="nav-mobile-dropdown" id="dropdown">
+        <li>
+          <a href="index.html" class="nav-mobile-link"> Home </a>
+        </li>
 
-      <li>
-        <a href="index.html#about" class="nav-mobile-link"> About </a>
-      </li>
+        <li>
+          <a href="index.html#about" class="nav-mobile-link"> About </a>
+        </li>
 
-      <li>
-        <a href="index.html#work" class="nav-mobile-link"> Work </a>
-      </li>
+        <li>
+          <a href="index.html#work" class="nav-mobile-link"> Work </a>
+        </li>
 
-      <li>
-        <a href="contact.html" class="nav-mobile-link"> Contact </a>
-      </li>
-    </ul>
+        <li>
+          <a href="contact.html" class="nav-mobile-link"> Contact </a>
+        </li>
+      </ul>
+    </nav>
+
     <main>
-      <div class="contact">
+      <section class="contact">
         <div class="container">
-          <div class="contact-left">
-            <h1 class="heading m2">Get in touch</h1>
+          <section class="contact-left">
+            <header>
+              <h1 class="heading m2">Get in touch</h1>
+            </header>
+
             <div class="contact-img my-2">
               <img
                 src="/dist/images/scott_Kelly.png"
@@ -83,7 +90,7 @@
                 alt=""
               />
             </div>
-            <div class="contact-text my-2">
+            <article class="contact-text my-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               blanditiis inventore dolorem facilis veritatis vitae fuga, odio
               excepturi eveniet eum non sint a libero mollitia officia deserunt
@@ -91,7 +98,7 @@
               Non odio molestiae autem labore perferendis sit magnam,
               exercitationem fugit esse consectetur maiores, blanditiis nesciunt
               vitae.
-            </div>
+            </article>
             <div class="contact-socials my-2">
               <a href="https://github.com/scottkelly36" class="github">
                 <svg
@@ -138,10 +145,15 @@
                 </svg>
               </a>
             </div>
-            <a href="" class="cv btn btn-feature">Download my CV</a>
-          </div>
+            <a
+              href="/dist/images/scott_Kelly.png"
+              class="cv btn btn-feature"
+              download=""
+              >Download my CV</a
+            >
+          </section>
 
-          <div class="contact-right">
+          <section class="contact-right">
             <form action="" class="form">
               <div class="form-control">
                 <input type="text" name="name" id="" placeholder="Name" />
@@ -153,15 +165,20 @@
                 <textarea
                   name=""
                   id=""
-                  placeholder="Your Meassage Here"
+                  placeholder="Your Message Here"
                 ></textarea>
               </div>
               <button type="submit" class="btn btn-feature">Send Form</button>
             </form>
-          </div>
+          </section>
         </div>
-      </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <time>
+        <p id="copyright"></p>
+      </time>
+    </footer>
+    <script src="/dist/script.js"></script>
   </body>
 </html>

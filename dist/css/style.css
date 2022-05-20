@@ -469,6 +469,7 @@ main {
   width: 100%;
   min-height: 100%;
   padding-left: 8%;
+  margin-bottom: 3rem;
 }
 
 .work-wrapper {
@@ -478,9 +479,12 @@ main {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   height: 100%;
+  margin: 0 4rem;
 }
 
 .work-item {
+  text-decoration: none;
+  color: #effafc;
   height: 200px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -488,9 +492,34 @@ main {
   overflow: hidden;
 }
 
+.work-item img {
+  height: 20%;
+}
+
+.work-item .work-item-text {
+  display: none;
+}
+
 .work-item:hover {
   grid-row: span 2;
   overflow: visible;
+  height: 30%;
+}
+
+.work-item:hover .work-item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 2rem;
+  text-align: center;
+  background-color: #182734;
 }
 
 .work img {
@@ -587,8 +616,23 @@ main {
 
 footer {
   width: 100%;
-  height: 10vh;
   background-color: #182734;
+  bottom: 0;
+  color: #effafc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: end;
+}
+
+footer p {
   bottom: 0;
 }
 
@@ -656,6 +700,7 @@ footer {
 .contact {
   min-height: 100vh;
   padding-top: 5%;
+  padding-bottom: 15%;
 }
 
 .contact .container {
@@ -787,6 +832,15 @@ footer {
   }
 }
 
+@media (max-width: 992px) {
+  .contact {
+    padding-top: 10%;
+  }
+  .project-container {
+    padding-top: 10%;
+  }
+}
+
 @media (min-width: 768px) {
   .nav-mobile {
     display: none;
@@ -794,6 +848,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .contact {
+    padding-top: 15%;
+  }
   .contact .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -806,6 +863,9 @@ footer {
   }
   .contact .container .contact-right {
     width: 70%;
+  }
+  .project-container {
+    padding-top: 15%;
   }
   .container {
     padding: 2rem 1.5rem;

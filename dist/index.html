@@ -14,7 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="/dist/images/favicon-32x32.png" />
+    <title>Scott's Portfolio</title>
   </head>
   <body>
     <nav class="nav">
@@ -58,7 +59,8 @@
         </li>
       </ul>
     </nav>
-    <ul class="nav-mobile-dropdown" id="dropdown">
+    <nav>
+      <ul class="nav-mobile-dropdown" id="dropdown">
       <li>
         <a href="index.html" class="nav-mobile-link"> Home </a>
       </li>
@@ -76,9 +78,11 @@
       </li>
 
     </ul>
+    </nav>
+    
 
     <main>
-      <div class="home">
+      <header class="home">
         <div class="overlay"></div>
         <div class="home-text">
           <h1 class="main-heading my-2 typing-effect">
@@ -86,14 +90,14 @@
           </h1>
           <a href="index.html#work" class="btn btn-feature my-3">View My Work</a>
         </div>
-      </div>
+      </header>
 
       <div class="container">
-        <div id="about" class="about box">
+        <section id="about" class="about box">
           <div class="about-img-container">
             <img  class="about-img" src="/dist/images/about.jpg" alt="" />
           </div>
-          <div class="about-textarea">
+          <article class="about-textarea">
             <h2 class="about-heading">About Me</h2>
             <p class="about-text my-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
@@ -122,43 +126,67 @@
               expedita animi obcaecati porro iste voluptatibus architecto?
             </p>
             <a href="contact.html" class="btn btn-feature my-2">Get In Touch</a>
-          </div>
-        </div>
+          </article>
+        </section>
 
-        <div id="work" class="work my-2">
+        <section id="work" class="work my-2">
           <h2 class="work-heading my-1">My Work</h2>
           <div class="work-wrapper">
             <a href="single.html" class="work-item">
-              <img src="/dist/images/FireShot Capture 003 - Wem Marine - www.wemmarine.com.png" alt="">
+              <img src="/dist/images/FireShot Capture 003 - Wem Marine - www.wemmarine.com.png" alt=""/>
+              <p class="work-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus adipisci modi repellendus accusantium odio provident nihil officia natus tempore. Sequi.
+              </p>
             </a>
             <a href="single.html" class="work-item">
-              <img src="/dist/images/bluebell.png" alt="">
+              <img src="/dist/images/bluebell.png" alt=""/>
+              <p class="work-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus adipisci modi repellendus accusantium odio provident nihil officia natus tempore. Sequi.
+              </p>
             </a>
             <a href="single.html" class="work-item">
-              <img src="/dist/images/FireShot Capture 003 - Wem Marine - www.wemmarine.com.png" alt="">
+              <img src="/dist/images/FireShot Capture 003 - Wem Marine - www.wemmarine.com.png" alt=""/>
+              <p class="work-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus adipisci modi repellendus accusantium odio provident nihil officia natus tempore. Sequi.
+              </p>
             </a>
             <a href="single.html" class="work-item">
-              <img src="/dist/images/bluebell.png" alt="">
+              <img src="/dist/images/bluebell.png" alt=""/>
+              <p class="work-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus adipisci modi repellendus accusantium odio provident nihil officia natus tempore. Sequi.
+              </p>
             </a>
             <a href="single.html" class="work-item">
-              <img src="/dist/images/FireShot Capture 003 - Wem Marine - www.wemmarine.com.png" alt="">
+              <img src="/dist/images/FireShot Capture 003 - Wem Marine - www.wemmarine.com.png" alt=""/>
+              <p class="work-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus adipisci modi repellendus accusantium odio provident nihil officia natus tempore. Sequi.
+              </p>
             </a>
             <a href="single.html" class="work-item">
-                <img src="/dist/images/bluebell.png" alt="">
+                <img src="/dist/images/bluebell.png" alt=""/>
+                <p class="work-item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus adipisci modi repellendus accusantium odio provident nihil officia natus tempore. Sequi.
+                </p>
             </a>
             <a href="single.html" class="work-item">
-              <img src="/dist/images/FireShot Capture 003 - Wem Marine - www.wemmarine.com.png" alt="">
+              <img src="/dist/images/FireShot Capture 003 - Wem Marine - www.wemmarine.com.png" alt=""/>
+              <p class="work-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus adipisci modi repellendus accusantium odio provident nihil officia natus tempore. Sequi.
+              </p>
             </a>
             <a href="single.html" class="work-item">
-              <img src="/dist/images/bluebell.png" alt="">
+              <img src="/dist/images/bluebell.png" alt=""/>
+              <p class="work-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus adipisci modi repellendus accusantium odio provident nihil officia natus tempore. Sequi.
+              </p>
             </a>
           </div>
-        </div>
+        </section>
         
 
-        <div class="testimonials my-2">
+        <section class="testimonials my-2">
           <h2 class="heading my-3">Testimonials</h2>
-          <div class="testimonial-container my-2">
+          <section class="testimonial-container my-2">
             <div class="testimonial-logo">
               <img
                 src="/dist/images/WEM_Logo_reverse_colour.png"
@@ -166,7 +194,7 @@
               />
             </div>
 
-            <div class="testimonial-text p-2">
+            <article class="testimonial-text p-2">
               <q>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Laboriosam aliquam doloremque ullam assumenda. Deserunt totam
@@ -179,11 +207,11 @@
               assumenda. E#8249x earum evniet, sint rem quos vel!
             </q>
             <p class="testimonial-author my-1">David Ford, WEM Marine</p>
-            </div>
+            </article>
             
-          </div>
+          </section>
 
-          <div class="testimonial-container my-2">
+          <section class="testimonial-container my-2">
             <div class="testimonial-logo">
               <img
                 src="/dist/images/WEM_Logo_reverse_colour.png"
@@ -191,7 +219,7 @@
               />
             </div>
 
-            <div class="testimonial-text p-2">
+            <article class="testimonial-text p-2">
               <q>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Laboriosam aliquam doloremque ullam assumenda. Deserunt totam
@@ -205,10 +233,10 @@
             </q>
             <p class="testimonial-author my-1">David Ford, WEM Marine</p>
 
-            </div>
-          </div>
+          </article>
+          </section>
 
-          <div class="testimonial-container my-2">
+          <section class="testimonial-container my-2">
             <div class="testimonial-logo">
               <img
                 src="/dist/images/WEM_Logo_reverse_colour.png"
@@ -216,7 +244,7 @@
               />
             </div>
 
-            <div class="testimonial-text p-2">
+            <article class="testimonial-text p-2">
               <q>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Laboriosam aliquam doloremque ullam assumenda. Deserunt totam
@@ -229,14 +257,18 @@
               assumenda. Ex earum eveniet, sint rem quos vel!
             </q>
             <p class="testimonial-author my-1">David Ford, WEM Marine</p>
-            </div>
-          </div>
-        </div>
+          </article>
+        </section>
+        </section>
       </div>
     </div>
    
     </main>
-    <footer></footer>
+    <footer>
+      <time>
+        <p id="copyright"></p>
+      </time>
+    </footer>
     <script src="/dist/script.js"></script>
   </body>
 </html>

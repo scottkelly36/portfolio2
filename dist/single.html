@@ -11,7 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="/dist/images/favicon-32x32.png" />
+    <title>Scott's Portfolio</title>
   </head>
   <body>
     <nav class="nav">
@@ -55,30 +56,35 @@
         </li>
       </ul>
     </nav>
-    <ul class="nav-mobile-dropdown" id="dropdown">
-      <li>
-        <a href="index.html" class="nav-mobile-link"> Home </a>
-      </li>
+    <nav>
+      <ul class="nav-mobile-dropdown" id="dropdown">
+        <li>
+          <a href="index.html" class="nav-mobile-link"> Home </a>
+        </li>
 
-      <li>
-        <a href="index.html#about" class="nav-mobile-link"> About </a>
-      </li>
+        <li>
+          <a href="index.html#about" class="nav-mobile-link"> About </a>
+        </li>
 
-      <li>
-        <a href="index.html#work" class="nav-mobile-link"> Work </a>
-      </li>
+        <li>
+          <a href="index.html#work" class="nav-mobile-link"> Work </a>
+        </li>
 
-      <li>
-        <a href="contact.html" class="nav-mobile-link"> Contact </a>
-      </li>
-    </ul>
+        <li>
+          <a href="contact.html" class="nav-mobile-link"> Contact </a>
+        </li>
+      </ul>
+    </nav>
+
     <main>
       <div class="project-container">
-        <h1 class="project-title">Bluebelltattoo.co.uk</h1>
+        <header>
+          <h1 class="project-title">Bluebelltattoo.co.uk</h1>
+        </header>
 
         <img src="/dist/images/bluebell.png" alt="" class="project-img m-2" />
 
-        <div class="project-links">
+        <section class="project-links">
           <a href="#" class="link-holder btn btn-primary m-2 p-1">
             <p class="github">
               <svg
@@ -97,7 +103,10 @@
             <p>View Code</p>
           </a>
 
-          <a href="#" class="link-holder btn btn-primary m-2 p-1">
+          <a
+            href="https://bluebelltattoo.co.uk/"
+            class="link-holder btn btn-primary m-2 p-1"
+          >
             <p class="website">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -114,24 +123,30 @@
             </p>
             <p>View Site</p>
           </a>
-        </div>
-
-        <p class="project-text m-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad excepturi
-          minus vitae dolorum deleniti,<br /><br />
-          aspernatur, consequatur qui iste asperiores laudantium nihil ullam
-          saepe, molestiae rerum quis expedita. Voluptate neque quod impedit,
-          sit nobis pariatur accusamus, iure perspiciatis cum quia tempore
-          eligendi est at dolorum ea assumenda minus odio laudantium suscipit
-          esse.<br />
-          <br />
-          Repellendus neque reprehenderit similique praesentium dolorem alias
-          facere doloribus architecto perferendis assumenda tempora sapiente
-          aliquid impedit ipsam, officia perspiciatis officiis harum deserunt
-          dolorum optio.
-        </p>
+        </section>
+        <article class="project-text m-3">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+            excepturi minus vitae dolorum deleniti,<br /><br />
+            aspernatur, consequatur qui iste asperiores laudantium nihil ullam
+            saepe, molestiae rerum quis expedita. Voluptate neque quod impedit,
+            sit nobis pariatur accusamus, iure perspiciatis cum quia tempore
+            eligendi est at dolorum ea assumenda minus odio laudantium suscipit
+            esse.<br />
+            <br />
+            Repellendus neque reprehenderit similique praesentium dolorem alias
+            facere doloribus architecto perferendis assumenda tempora sapiente
+            aliquid impedit ipsam, officia perspiciatis officiis harum deserunt
+            dolorum optio.
+          </p>
+        </article>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <time>
+        <p id="copyright"></p>
+      </time>
+    </footer>
+    <script src="/dist/script.js"></script>
   </body>
 </html>

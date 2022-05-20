@@ -99,6 +99,7 @@ main {
         width: 100%;
         min-height: 100%;
         padding-left: 8%;
+        margin-bottom: 3rem;
     }
 
     &-wrapper {
@@ -106,19 +107,46 @@ main {
         gap: 2.5rem;
         grid-template-columns: repeat(3, 1fr);
         height: 100%;
+        margin: 0 4rem
     }
 
 
 
     &-item {
-
+        text-decoration: none;
+        color: $white-color;
         height: 200px;
         width: fit-content;
         overflow: hidden;
 
+
+
+        img {
+            height: 20%;
+
+        }
+
+
+
+        .work-item-text {
+            display: none;
+        }
+
         &:hover {
             grid-row: span 2;
             overflow: visible;
+            height: 30%;
+
+
+            .work-item-text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                padding: 2rem;
+                text-align: center;
+                background-color: $primary-color;
+            }
         }
     }
 
@@ -189,7 +217,15 @@ main {
 
 footer {
     width: 100%;
-    height: 10vh;
     background-color: $primary-color;
     bottom: 0;
+    color: $white-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: end;
+
+    p {
+        bottom: 0;
+    }
 }

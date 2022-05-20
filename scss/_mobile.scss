@@ -9,6 +9,16 @@ $s : 576px;
     }
 }
 
+@media(max-width:$l) {
+    .contact {
+        padding-top: 10%;
+    }
+
+    .project-container {
+        padding-top: 10%;
+    }
+}
+
 @media(min-width: $m) {
     .nav {
         &-mobile {
@@ -21,6 +31,8 @@ $s : 576px;
 
 @media(max-width: $m) {
     .contact {
+        padding-top: 15%;
+
         .container {
             flex-direction: column;
 
@@ -33,6 +45,10 @@ $s : 576px;
                 width: 70%;
             }
         }
+    }
+
+    .project-container {
+        padding-top: 15%;
     }
 
     .container {
